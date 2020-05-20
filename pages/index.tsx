@@ -3,7 +3,6 @@ import { GetStaticProps } from 'next'
 import { Recipe } from '../interfaces'
 import { getRecipeData } from '../utils/sample-data'
 import RecipeList from '../components/RecipeList'
-import { Container } from 'next/app'
 
 type Props = {
   items: Recipe[]

@@ -2,7 +2,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 // Components
-import { Container, AppBar, Toolbar, Typography } from '@material-ui/core'
+import { AppBar, Toolbar, Typography } from '@material-ui/core'
 // Colors
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
