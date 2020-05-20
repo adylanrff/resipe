@@ -15,11 +15,16 @@ const RecipeList = ({ items }: Props) => {
         setIndex(index+1)
     }
 
+    const recipe:Recipe = items[index % items.length]
+
     return (
-        <div className={styles.container}>
+        <div 
+            className={styles.container}
+            style={{ backgroundImage: `url(${recipe.imageURL})`}}
+        >
             <RecipeCard
                 key={index}
-                recipe={items[index % items.length]}
+                recipe={recipe}
                 onSwipe={getNextRecipe}
             />
         </div>
